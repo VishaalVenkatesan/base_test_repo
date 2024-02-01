@@ -12,6 +12,7 @@ import twtmob from "./twtmob.png"
 import gitmob from "./gitmob.png"
 import discordmob from "./discordmob.png"
 import logoup from "./logoup.png"
+import excel from "./excel.png"
 export{
     left,
     logo,
@@ -26,5 +27,6 @@ export{
     twtmob,
     gitmob,
     discordmob,
-    logoup
+    logoup,
+    excel
 }
