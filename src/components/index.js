@@ -1,7 +1,7 @@
 import SignIn from "./SignIn.jsx";
 import Nav from "./Nav.jsx"
 import Upload from "./Upload.jsx";
-import Navmob from "./navmob.jsx";
+import Navmob from "./Navmob.jsx";
 export{
    SignIn,
    Nav,
