@@ -13,6 +13,9 @@ import gitmob from "./gitmob.png"
 import discordmob from "./discordmob.png"
 import logoup from "./logoup.png"
 import excel from "./excel.png"
+import menu from "./menu.png"
+import logopurp from "./logopurp.png"
+import close from "./close.png"
 export{
     left,
     logo,
@@ -28,5 +31,8 @@ export{
     gitmob,
     discordmob,
     logoup,
-    excel
+    excel,
+    close,
+    menu,
+    logopurp,
 }

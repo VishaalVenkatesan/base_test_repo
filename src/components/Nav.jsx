@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { logoup } from '../assets';
 
-const Nav = ({ children }) => {
+const Nav = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
 
@@ -12,7 +12,7 @@ const Nav = ({ children }) => {
 
   return (
     <div>
-      <div className="flex-col flex-1 hidden list-none bg-white sm:flex">
+      <div className="flex-col flex-1 hidden list-none bg-white sm:flex w-[170px]">
         <div className="mt-[26px] ml-[26px] flex flex-row">
           <img src={logoup} alt="logo" className="" />
           <div className="text-slate-950 text-2xl font-medium font-['Nunito'] ml-[15px] mt-[4px]">Base</div>
