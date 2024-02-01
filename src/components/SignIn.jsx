@@ -1,5 +1,5 @@
 import { logo, apple,google, left, github, twitter, linkedin, discord, logomobile, gitmob, twtmob, discordmob, linkedinmob} from '../assets';
-
+import { useNavigate } from 'react-router-dom';
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
@@ -8,7 +8,12 @@ const openInNewTab = (url) => {
 
 const SignIn = () => 
   {
-    
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/upload');
+  }
   return (
     <div>
   <div className="flex-1 hidden list-none sm:flex">
@@ -59,7 +64,7 @@ const SignIn = () =>
 
         <div className="flex flex-col mt-8">
           <div className="w-[422.64px] h-[347.99px] bg-white rounded-[20px]">
-            <form className="w-[105.38px] h-[20.86px] text-black text-base font-normal font-['Lato'] ml-[32px] mt-[32px]">
+            <form className="w-[105.38px] h-[20.86px] text-black text-base font-normal font-['Lato'] ml-[32px] mt-[32px]" onSubmit={handleSubmit}>
               <label>
                 Email Address
                 <input type="email" name="email" className="w-[356.77px] h-[43.91px] bg-neutral-100 rounded-[10px] mb-[21px]" />
@@ -119,7 +124,7 @@ const SignIn = () =>
         <div className="flex mt-8">
   
   <div className="w-[328.64px] h-[350.99px] bg-white rounded-[20px] flex flex-col"  >
-    <form className="w-[105.38px] h-[20.86px] text-black text-base font-normal font-['Lato'] ml-[32px] mt-[32px] flex flex-col">
+    <form className="w-[105.38px] h-[20.86px] text-black text-base font-normal font-['Lato'] ml-[32px] mt-[32px] flex flex-col" onSubmit={handleSubmit}>
       <label>
       Email Address
       <input type="email" name="email" className="w-[276.77px] h-[43.91px] bg-neutral-100 rounded-[10px] mb-[21px]" />
